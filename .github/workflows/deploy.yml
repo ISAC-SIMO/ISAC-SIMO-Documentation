@@ -31,8 +31,7 @@ jobs:
           cache: "pip"
       - name: Install & Build
         run: |
-          pip install mkdocs
-          pip install mkdocs-material
+          pip install -r requirements.txt
           mkdocs build
       - name: Setup Pages
         uses: actions/configure-pages@v2
