@@ -1,0 +1,42 @@
+site_name: ISAC-SIMO
+site_url: https://docs.isac-simo.net/
+site_description: ISAC-SIMO is a system to validate that the intervention work done for homeowners has been done correctly and safely. It is a Build Change project supported by a grant from IBM. ISAC-SIMO is short for Intelligent Supervision Assistant for Construction - Sistema Inteligente de Monitoreo de Obra. It Checks your quality of house.
+
+repo_name: GitHub
+repo_url: https://github.com/ISAC-SIMO/ISAC-SIMO-Documentation
+edit_uri: https://github.com/ISAC-SIMO/ISAC-SIMO-Documentation/blob/main/docs
+
+theme:
+  # name-options[ mkdocs, readthedocs]
+  name: material
+  highlightjs: true
+  custom_dir: docs/overrides
+  favicon: favicon.png
+  logo: logo.png
+  features:
+    - navigation.instant
+    - navigation.tabs
+  # custom_dir: docs_theme
+  palette:
+    primary: white
+
+markdown_extensions:
+  - toc:
+      anchorlink: True
+  - attr_list
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Web Application: web-application.md
+  - Mobile Application: mobile-application.md
+  - Developer Guide: developer-guide.md
+  - Mobile API Guide: mobile-api-guide.md
+  - Lite Dashboard: lite-dashboard.md
+  - External Integration: integration.md
+  - Contribute: contribute.md
+
+extra:
+  generator: false
+
+extra_css: [extra.css]
